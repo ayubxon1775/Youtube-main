@@ -99,7 +99,7 @@ tabList.addEventListener('click', (e) => {
             activePanel.classList.remove('close');
             toActivePanel.classList.add('active');
         },
-        {once:true}
+        {once: true}
     )
 });
 
