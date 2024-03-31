@@ -109,6 +109,10 @@ const swiper = new Swiper(".swiper",{
     loop: true,
 });
 
+ScrollReveal().reveal(".blog__card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
 
 
 
