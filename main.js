@@ -103,6 +103,11 @@ tabList.addEventListener('click', (e) => {
     )
 });
 
+const swiper = new Swiper(".swiper",{
+    slidesPerView:"auto",
+    spaceBetween: 30,
+    loop: true,
+});
 
 
 

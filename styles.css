@@ -390,6 +390,77 @@ nav{
 .panel__card .section__description{
     margin-bottom: 1rem;
 }
+
+ .banner {
+    background-color: var(--primery-color);
+ }   
+ .banner__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4 rem 0;
+ }
+ .banner__card{
+    text-align: center;
+ }
+ .banner__card:nth-child(2n - 1){
+    border-right: 1px solid var(--white);
+ }
+ .banner__card h4{
+    font-size: 2rem;
+    font-weight: 500;
+ }
+
+.client{
+   background-color: var(--secondary-color-dark); 
+}
+.client__container .section__header{
+    text-align: center;
+}
+.client__container .section__header::after{
+    content: "Testimonials";
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.client__container .section__description{
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.swiper {
+    width: 100%;
+}
+.client__card{
+    max-width: 750px;
+    margin-inline: auto;
+    text-align: center;
+}
+.client__card p{
+    margin-bottom: 1rem;
+    line-height: 1.75rem;
+}
+.client__card h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.client__card h5{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+.client__card img{
+    max-width: 100px;
+    margin-inline: auto;
+    border-radius: 100%;
+}
+
+
+
+
+
+
 @media (width > 540px){
     .panel__grid{
         grid-template-columns: repeat(2, 1fr);
@@ -443,6 +514,14 @@ nav{
     .panel__grid{
         grid-template-columns: repeat(3, 1fr);
     }
+    .banner__container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .banner__card:nth-child(2n - 1),
+    .banner__card:nth-child(2) {
+        border-right: 1px solid var(--white);
+    }
+
 }
 @media (width > 1024px){
     .panel__grid {
